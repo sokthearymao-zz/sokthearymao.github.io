@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<!-- Head contents-->
+	<head>
+		<!-- Title with jekyll paramaters; calls title from corresponding page -->
+		<title>{{ page.title }}</title>
+		<!-- links to google fonts & stylesheets; uses main.css -->
+		<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<!-- Link to analytics.html; needs further exploration -->
+		{% include analytics.html %}
+	</head>
+	<!-- Body contents -->
+	<body>
+        <!-- Banner hosted on github issues -->
+        <div title="a simple inspirational quote" class="banner">
+            <img src="/assets/banner002.png"/>
+        </div>
+		<!-- Navigation bar; contains links to pages across the blog -->
+		<nav>
+			<ul>
+				<!--<li style="color: #470047"> -->
+                <li>
+					<a title="check out my github page" href="https://github.com/sokthearymao">
+						my github page
+					</a>
+				</li>
+				<li>
+					<a title="read more on the blog" href="/">
+						blog
+					</a>
+				</li>
+        		<li>
+        			<a title="a little about me" href="/about">
+        				about
+        			</a>
+        		</li>
+                <li>
+                    <a title="curriculum vitae" href="/cv">
+                        cv
+                    </a>
+                </li>
+        		<li>
+        			<a title="a dabble of fiction" href="/short_fiction">
+        				short fiction
+        			</a>
+        		</li>
+        		<li>
+        			<a title="some of my projects" href="/portfolio">
+        				portfolio
+        			</a>
+        		</li>
+    			<li>
+    				<a title="archive full access" href="/archive">
+    					archive
+    				</a>
+    			</li>
+          	</ul>
+        </nav>
+	  	
+	  	<!-- Div for main content/container-->
+		<div class="container">			
+			{{ content }}	
+		</div>
+		<!-- Includes the comments.html which adds Disqus to blog -->
+		{% include comments.html %}
+		<!-- Footer contents -->
+		<footer>
+			<!-- Add links to facebook, twitter, linkedIn, and email; update later -->
+         	<ul>
+ 				<li>
+                    <a title="connect via facebook" id="facebook_icon" href="https://www.facebook.com/soktheary.mao">
+                    	<img src="/assets/facebook.png">
+                    </a>
+                </li>
+
+                <li>
+                    <a title="connect via twitter" id="twitter_icon" href="https://twitter.com/SokthearyMao">
+                    	<img src="/assets/twitter.png">
+                    </a>
+                </li>
+
+                <li>
+                    <a title="connect via linkedIn" id="linkedIn_icon" href="https://ca.linkedin.com/in/sokthearymao">
+                    	<img src="/assets/linkedIn.png">
+                    </a>
+              	</li>
+
+                <li>
+                    <a title="connect via email" id="email_icon" href="mailto:soktheary.mao@gmail.com">
+                    	<img src="/assets/email.png">
+                    </a>
+                </li>
+    		</ul>
+    		<!-- Copyright with time and date -->
+         	<p title="Soktheary Mao">&copy; Soktheary Mao, {{ site.time | date: '%Y' }}. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

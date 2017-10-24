@@ -1,0 +1,4 @@
+name: soktheary's blog
+markdown: kramdown
+paginate: 2
+paginate_path: "/blog/page:num/"

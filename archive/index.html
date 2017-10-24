@@ -1,0 +1,24 @@
+---
+layout: default
+title: Archive
+---
+<div class="blurb">
+	<h1 title="archive full access">
+		Archive
+	</h1>
+	<p>
+		# Blog Posts
+	</p>
+	<ul>
+		{% for post in site.posts %}
+	    	<li>
+	      		<a title="{{ post.title }}" href="{{ post.url }}">
+	      			{{ post.date | date_to_string }} - {{ post.title }}
+	      		</a>
+	    	</li>
+	  	{% endfor %}
+	</ul>
+	<a title="read more on the blog" href="/">
+		Go back to the blog...
+	</a>
+</div>

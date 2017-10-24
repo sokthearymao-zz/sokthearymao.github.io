@@ -1,0 +1,133 @@
+/*
+  Author: Soktheary Mao
+  Description: Main styles for the blog
+*/
+
+/* Body styles */
+body {
+	margin: 60px auto;
+    width: 60%;
+  	font-family: 'Cabin', sans-serif;
+}
+/* Navigation styles */
+nav{
+	text-align: left;
+	padding: 15px 0;
+	margin: 0 0;
+	border-bottom: 2px solid rgba(33, 40, 44, 0.5);
+}
+nav ul{
+	font-weight: bold;
+	list-style:none;
+	margin: 1% 10px;
+	padding:0;
+}
+nav ul li a{
+    color:#004D66;
+}
+nav li {
+	display:inline; 
+	padding: 0 2% ;
+	margin: 1%;
+	width:100%;
+}
+/* Paragraph styles */
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #000000;
+}
+/* Footer styles*/
+footer ul {
+	list-style: none;
+	margin:1%;
+}
+footer li {
+ 	display: inline-block; 
+}
+footer {
+	font-size: 1em;
+	font-weight: bold;
+	border-top:  2px solid rgba(33, 40, 44, 0.5);
+	text-align:center;
+	color: #000000;
+	padding: 0;
+}
+footer p{
+	color: #000000;
+	margin-bottom: 2%;
+	margin-top :0;
+	padding: 0;
+}
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #004D66;
+}
+a:hover {
+    font-weight: bold;
+    color: #00AAE3;
+    text-decoration: underline;
+    -moz-text-decoration-color: #004D66; /* Code for Firefox */
+    text-decoration-color: #004D66;
+}
+/* Header styles */
+h1 {
+	/*color: #12677A;*/
+	color: #000000;
+	font-family: 'Cabin', sans-serif;
+}
+/* List styles */
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+ul.posts li {
+    list-style: none;
+}
+/* Class styles*/
+.posts{
+    padding: 5px;
+}
+
+.banner img{
+	width:100%;
+	padding:0;
+	border-bottom: 2px solid rgba(33, 40, 44, 0.5); 
+	border-top: 2px solid rgba(33, 40, 44, 0.5);
+	margin-bottom:3%;
+}
+.pagination-item{
+	font-size:1.5em;
+	color: #0072A3;
+	font-family: 'Cabin', sans-serif;
+}
+.post-date{
+	font-weight: 550;
+}
+
+.pagination{
+	width: 100%;
+	overflow: hidden;
+	text-align:center;
+}
+/* ID styles */
+#twitter_icon img, #email_icon img, #facebook_icon img, #linkedIn_icon img{
+	width:25px;
+	padding-top:1%;
+	margin:0;
+	transition: background-color 1.0s ease;
+  	background-color: white;
+}
+#twitter_icon img:hover, #email_icon img:hover, #facebook_icon img:hover, #linkedIn_icon img:hover{
+	background-color: rgba(0, 172, 230, 0.8);
+}
+#projects-list{
+	margin: 0;
+	padding:0;
+	list-style:none;
+}
+#projects-list li {
+	width:60%;
+	margin: 2.5%;
+}
